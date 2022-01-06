@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@800&display=swap");
+
+body {
+  background-color: rgb(133, 133, 133);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+h1 {
+  font-size: 5em;
+  margin-bottom: 0%;
+}
+
+h3 {
+  font-size: 2em;
+}
+#start {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 1.5em;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+.game-container {
+  display: flex;
+  flex-direction: row;
+}
+.square {
+  width: 200px;
+  height: 200px;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  pointer-events: auto;
+}
+
+.player-submit {
+  padding: 10px;
+  margin-top: 15px;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  background-color: white;
+  font-size: 1.5em;
+  font-family: "Alegreya Sans SC", sans-serif;
+}
+
+#green {
+  background-color: green;
+}
+
+#red {
+  background-color: red;
+}
+
+#yellow {
+  background-color: #ffff00;
+}
+
+#blue {
+  background-color: blue;
+}
