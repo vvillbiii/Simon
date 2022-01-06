@@ -23,3 +23,4 @@ To start the game, Simon will press one square to start a new pattern. If the pl
 The player is awarded one point each time the player gets the pattern right. To win the game the player has to match Simon's pattern 10 times in a row. The game is over if the player gets the pattern wrong.
 
 Good luck!
+# Simon
