@@ -86,10 +86,23 @@ function winner() {
   if (gameScore.innerText === "Score: 10") {
     gameScore.innerText = "You Win! 🎉";
   } else {
-    computerPattern.push(colorPattern());
+    repeatComputerPattern();
   }
 }
 
-function tryLoop() {
-  computerPattern.forEach(color, index, function () {});
+function repeatComputerPattern() {
+  computerPattern.forEach(function (element, index) {
+    setTimeout(() => {
+      if (element === "green") {
+        $green.fadeOut(100).fadeIn(200);
+      } else if (element === "red") {
+        $red.fadeOut(100).fadeIn(200);
+      } else if (element === "yellow") {
+        $yellow.fadeOut(100).fadeIn(200);
+      } else if (element === "blue") {
+        $blue.fadeOut(100).fadeIn(200);
+      }
+    }, 750 * (index + 0.8));
+  });
+  computerPattern.push(colorPattern());
 }
