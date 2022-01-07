@@ -146,4 +146,5 @@ function tryLoop() {
   }
 }
 
-// have computer pattern repeat before giving a new color.
+// CSS colors
+// body background option 1 #858585
