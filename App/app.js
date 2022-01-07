@@ -15,6 +15,7 @@ const catSound = new Audio("Sounds/cat_like1a.mp3");
 const jumpSound = new Audio("Sounds/jump04.mp3");
 const powerUpSound = new Audio("Sounds/powerup03.mp3");
 const angelsSound = new Audio("Sounds/chorus_of_angels1.mp3");
+const gameOverSound = new Audio("Sounds/gameover.mp3");
 //jQuery elements
 $blue = $("#blue");
 $red = $("#red");
@@ -67,6 +68,7 @@ playerSubmit.addEventListener("click", function () {
     ) {
       level++;
     } else {
+      gameOverSound.play();
       return (gameScore.innerText = "Game Over! Start Again");
     }
   }
