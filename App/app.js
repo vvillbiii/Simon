@@ -16,6 +16,7 @@ const jumpSound = new Audio("Sounds/jump04.mp3");
 const powerUpSound = new Audio("Sounds/powerup03.mp3");
 const angelsSound = new Audio("Sounds/chorus_of_angels1.mp3");
 const gameOverSound = new Audio("Sounds/gameover.mp3");
+const allBtns = document.querySelectorAll("button");
 //jQuery elements
 $blue = $("#blue");
 $red = $("#red");
@@ -133,7 +134,9 @@ lightMode.addEventListener("click", function () {
   document.body.style.backgroundColor = "white";
   document.body.style.color = "black";
   startBtn.style.border = "2px solid black";
+  startBtn.style.color = "black";
   playerSubmit.style.border = "2px solid black";
+  playerSubmit.style.color = "black";
   darkMode.style.visibility = "visible";
   lightMode.style.visibility = "hidden";
   green.style.background = "green";
@@ -145,8 +148,10 @@ lightMode.addEventListener("click", function () {
 darkMode.addEventListener("click", function () {
   document.body.style.backgroundColor = "#191a19";
   document.body.style.color = "white";
+  startBtn.style.color = "#191a19";
   startBtn.style.border = "2px solid transparent";
   playerSubmit.style.border = "2px solid transparent";
+  playerSubmit.style.color = "#191a19";
   lightMode.style.visibility = "visible";
   darkMode.style.visibility = "hidden";
   green.style.background = "#486a47";
