@@ -145,3 +145,5 @@ function tryLoop() {
     }, 500);
   }
 }
+
+// have computer pattern repeat before giving a new color.
