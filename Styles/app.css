@@ -23,6 +23,7 @@ h3 {
   background-color: white;
   font-size: 1.5em;
   font-family: "Alegreya Sans SC", sans-serif;
+  box-shadow: 2px 2px 1px black;
 }
 .game-container {
   display: flex;
@@ -44,50 +45,33 @@ h3 {
   background-color: white;
   font-size: 1.5em;
   font-family: "Alegreya Sans SC", sans-serif;
+  box-shadow: 2px 2px 1px black;
 }
 
 #green {
-  background-color: green;
+  background: green;
 }
 
 #red {
-  background-color: red;
+  background: red;
 }
 
 #yellow {
-  background-color: #ffff00;
+  background: #ffff00;
 }
 
 #blue {
-  background-color: blue;
-}
-
-.button-div {
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-}
-
-.pattern-mode {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 2px solid transparent;
-  border-radius: 5px;
-  background-color: white;
-  font-size: 1.5em;
-  font-family: "Alegreya Sans SC", sans-serif;
+  background: blue;
 }
 
 .dark-mode {
   visibility: hidden;
-  border: 2px solid transparent;
-  border-radius: 10px;
-  background-color: white;
+  border: transparent;
+  background-color: transparent;
 }
 
 .light-mode {
   visibility: visible;
-  border: 2px solid transparent;
-  border-radius: 10px;
-  background-color: rgb(133, 133, 133);
+  border: transparent;
+  background-color: transparent;
 }

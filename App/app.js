@@ -113,17 +113,24 @@ function repeatComputerPattern() {
 lightMode.addEventListener("click", function () {
   document.body.style.backgroundColor = "white";
   startBtn.style.border = "2px solid black";
-  patternMode.style.border = "2px solid black";
   playerSubmit.style.border = "2px solid black";
   darkMode.style.visibility = "visible";
   lightMode.style.visibility = "hidden";
+  green.style.background = "linear-gradient(to right bottom, green, #8eff8e)";
+  red.style.background =
+    "linear-gradient(to left bottom, red, rgb(253, 129, 129)";
+  yellow.style.background = "linear-gradient(to top right, #ffff00, #fafa96)";
+  blue.style.background = "linear-gradient(to top left, blue, #a3a3ff)";
 });
 
 darkMode.addEventListener("click", function () {
   document.body.style.backgroundColor = "#858585";
   startBtn.style.border = "2px solid transparent";
-  patternMode.style.border = "2px solid transparent";
   playerSubmit.style.border = "2px solid transparent";
   lightMode.style.visibility = "visible";
   darkMode.style.visibility = "hidden";
+  green.style.background = "green";
+  red.style.background = "red";
+  yellow.style.background = "yellow";
+  blue.style.background = "blue";
 });
