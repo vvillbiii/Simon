@@ -16,13 +16,11 @@ $blue = $("#blue");
 $red = $("#red");
 $yellow = $("#yellow");
 $green = $("#green");
-$playerSubmit = $(".player-submit");
 //game variables
 let playerPattern = [];
 let computerPattern = [];
 let score = 0;
 let level = 1;
-let repeatPattern = false;
 
 green.addEventListener("click", function () {
   $green.fadeOut(100).fadeIn(200);
@@ -51,17 +49,6 @@ startBtn.addEventListener("click", function () {
   playerPattern = [];
   computerPattern = [];
   computerPattern.push(colorPattern());
-  repeatPattern = false;
-});
-
-patternMode.addEventListener("click", function () {
-  level = 1;
-  score = 0;
-  gameScore.innerText = `Score: ${score}`;
-  playerPattern = [];
-  computerPattern = [];
-  computerPattern.push(colorPattern());
-  repeatPattern = true;
 });
 
 playerSubmit.addEventListener("click", function () {
@@ -75,6 +62,7 @@ playerSubmit.addEventListener("click", function () {
       return (gameScore.innerText = "Game Over! Start Again");
     }
   }
+  computerPattern.push(colors[Math.floor(Math.random() * colors.length)]);
   score++;
   gameScore.innerText = `Score: ${score}`;
   winner();
@@ -101,10 +89,8 @@ function colorPattern() {
 function winner() {
   if (gameScore.innerText === "Score: 10") {
     gameScore.innerText = "You Win! 🎉";
-  } else if (repeatPattern === true) {
-    repeatComputerPattern();
   } else {
-    computerPattern.push(colorPattern());
+    repeatComputerPattern();
   }
 }
 
@@ -122,7 +108,6 @@ function repeatComputerPattern() {
       }
     }, 750 * (index + 0.8));
   });
-  computerPattern.push(colorPattern());
 }
 
 lightMode.addEventListener("click", function () {

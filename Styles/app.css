@@ -82,14 +82,12 @@ h3 {
   visibility: hidden;
   border: 2px solid transparent;
   border-radius: 10px;
-  background-color: rgb(133, 133, 133);
-  color: white;
+  background-color: white;
 }
 
 .light-mode {
   visibility: visible;
   border: 2px solid transparent;
   border-radius: 10px;
-  background-color: white;
-  color: rgb(133, 133, 133);
+  background-color: rgb(133, 133, 133);
 }
